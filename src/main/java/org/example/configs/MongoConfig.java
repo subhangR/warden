@@ -14,7 +14,7 @@ public class MongoConfig {
         @Bean
         public MongoClient mongo() {
             ConnectionString connectionString = new ConnectionString
-                    ("mongodb+srv://subhang:pgappmongo@cluster0.vmikkq7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+                    ("");
             MongoClientSettings mongoClientSettings = MongoClientSettings.builder()
                     .applyConnectionString(connectionString)
                     .build();
